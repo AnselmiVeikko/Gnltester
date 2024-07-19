@@ -6,7 +6,7 @@
 /*   By: ahentton <ahentton@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 14:10:28 by ahentton          #+#    #+#             */
-/*   Updated: 2024/07/19 14:12:40 by ahentton         ###   ########.fr       */
+/*   Updated: 2024/07/19 17:57:47 by ahentton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,6 @@ int main(void)
 	if (line != NULL)
 		printf ("[1CHAR_NL]: %s", line);
     }
+    free (line);
+   close (fd);
 }

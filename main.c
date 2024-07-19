@@ -6,7 +6,7 @@
 /*   By: ahentton <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/24 15:31:32 by ahentton          #+#    #+#             */
-/*   Updated: 2024/07/19 14:14:03 by ahentton         ###   ########.fr       */
+/*   Updated: 2024/07/19 17:56:52 by ahentton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ int main(void)
 	if (line == NULL)
 		break;
 	printf("[LONGLINE_NO_NL]: %s", line);
+	free (line);
     }
     while (1)
     {
@@ -37,6 +38,7 @@ int main(void)
         if (line == NULL)
                 break;
         printf("[5XNL]: %s", line);
+	free (line);
     }
     while (1)
     {
@@ -44,6 +46,7 @@ int main(void)
         if (line == NULL)
                 break;
         printf("[1CHAR]: %s", line);
+	free (line);
     }
     while (1)
     {
@@ -51,5 +54,7 @@ int main(void)
         if (line == NULL)
                 break;
         printf("[1CHAR_NL]: %s", line);
+	free (line);
     }
+    close (fd);
 }
